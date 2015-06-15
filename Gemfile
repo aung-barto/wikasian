@@ -10,7 +10,7 @@ gem 'will_paginate'
 # Use pure to style forms
 gem 'pure-css-rails'
 # Binding.pry
-gem 'pry'
+# gem 'pry'
 # Use HTTParty to get API for random user
 gem 'httparty'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
