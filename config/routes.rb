@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
-
-  # get 'wikasia/' => 'articles#about'
+  
+  root 'articles#about'
   resources :users
   get 'articles/rand' => 'articles#rand'
   resources :articles
