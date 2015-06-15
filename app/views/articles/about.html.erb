@@ -1,0 +1,13 @@
+<div class='about'>
+<h2 class='about_wikasia'>About Wikasia</h2>
+<p class='about_p'>Here is where you can plan your long overdue vacation in Asia. Our seasoned travellers have compiled for you all that you need to know before you book your next plane ticket. We update our site weekly, so please come back and visit us often.</p>
+</div>
+<div class='sample'>
+<% @articles.each do |sample| %>
+	<ul class='index_ul'>
+		<li class='each_art'><h2><%= link_to sample.title, sample %></h2>
+		<%= image_tag sample.img_url, class: 'sample_image' %><br>
+		<p class='snippets'><%= sample.content[0...100]+"..." %></p></li>
+	</ul>
+<% end %>
+</div>

@@ -1,0 +1,14 @@
+<div class='index_art'>
+	<% will_paginate @articles %>
+	<% @articles.each do |article| %>
+	<ul class='index_ul'>
+		<li class='each_art'><h2 class='index_title'><%= link_to article.title, article %></h2><br>
+		<%= image_tag article.img_url, class: 'art_image' %><br>
+		<p class='snippets'><%= article.content[0...100]+"..." %></p></li>
+	</ul>
+	<% end %>
+	
+	<div class="pagination pagination-sm">
+    <%= will_paginate @articles, :container => false %>
+  </div>
+</div>

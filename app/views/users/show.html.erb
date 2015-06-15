@@ -1,0 +1,20 @@
+<div class='show_user'>
+	<ul class='user_edit'>
+		<li class='edit_delete'><%= link_to "Edit", edit_user_path(@user.id) %></li>
+		<li class='edit_delete'><%= link_to "Delete", @user, method: :delete, class: 'delete' %></li>
+	</ul><br>
+	<%= image_tag @user.u_img %>
+	<ul class='user_info'>
+		<li class='name'><%= @user.name %></li>
+		<li><%= @user.email %></li>
+		<li><%= @user.location %></li>
+	</ul><br><br>
+</div>
+<div class='show_titles'>
+	<h2>Authored Articles</h2>
+		<ul class='match_titles'>
+			<% @articles.each do |art| %>
+				<li><%= link_to art.title, art %></li>
+			<% end %>
+		</ul>
+</div>

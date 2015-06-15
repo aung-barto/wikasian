@@ -1,0 +1,295 @@
+$small_font:'EB Garamond', serif;
+$large_font:'Raleway', sans-serif;
+$hover_color: #7f7f7f;
+$button_color: #77C6C3;
+$profile_color: #white;
+$nav_bar_color: #5c5c58;
+.user_width {
+	width: 5/7 * 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.user_img {
+	border: 1px solid $profile_color;
+	border-radius: 75px;
+	opacity: 0.6;
+}
+
+.article_image {
+	margin: 0px;
+	border: 0px;
+	width: 280px;
+	height: 187px;
+}
+
+
+nav {
+	background-color: white;
+	h1.logo {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding: 20px 0px 0px 100px;
+		font-family: $large_font;
+		font-size: 3em;
+		color: $nav_bar_color;
+	}
+	ul#nav_tabs{
+		padding: 10px 0px 10px 100px;
+		margin-bottom: 0px;
+		li.nav_bar {
+			color: $nav_bar_color;
+			display: inline-block;
+			font-family: $small_font;
+			padding: 0px 8px 0px 8px;
+			border-right: 1px solid $nav_bar_color;
+		}
+		li.home {
+			border-left: 1px solid $nav_bar_color;
+		}
+	}
+}
+
+body{
+	display: block;
+	background-color: #d8d8d8;
+}
+
+a{
+	text-decoration: none;
+	font-family: $small_font;
+	color: black;
+}
+a:hover {
+	color: $hover_color;
+}
+
+ul {
+	list-style: none;
+	-webkit-padding-start: 0px;
+}
+
+.about {
+	margin: 15px 470px 0px 470px;
+	height: 150px;
+	padding: 9px 20px 9px 20px;
+	h2.about_wikasia {
+		font-family: $large_font;
+		text-align: center;
+		margin: 0px;
+	}
+	p.about_p {
+		font-family: $small_font;
+		font-size: 15px;
+		text-align: center;
+		padding-top: 0px;
+	}
+}
+
+.sample {
+	margin: 15px 150px 0px 150px;
+	ul.index_ul {
+		display: inline-block;
+		margin: 0px;
+		border: 0px;
+		li.each_art {
+			width: 280px;
+			padding: 0px 21.5px 0px 21.5px;
+		}
+		h2.index_title {
+			margin-bottom: 0px;
+			font-family: $large_font;
+			font-size: 2em;
+		}
+		p.snippets {
+			font-family: $small_font;
+			font-size: 15px;
+			width: 280px;
+		}
+	}
+}
+img.sample_image {
+	@extend .article_image;
+}
+
+.index_art {
+	margin: 15px 150px 0px 150px;
+	ul.index_ul {
+		display: inline-block;
+		margin: 0px;
+		border: 0px;
+		li.each_art {
+			width: 280px;
+			padding: 0px 21.5px 0px 21.5px;
+		}
+		h2.index_title {
+			margin-bottom: 0px;
+			font-family: $large_font;
+			font-size: 2em;
+		}
+		p.snippets {
+			font-family: $small_font;
+			width: 280px;
+		}
+	}
+}
+img.art_image {
+	@extend .article_image;
+} 
+.pagination {
+	padding: 8px 10px 8px 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+span.previous_page.disabled {
+	font-family: $small_font;
+	color: #7f7f7f;
+}
+em.current {
+	font-family: $small_font;
+	font-size: 30px;
+	color:#28c891;
+}
+
+
+.show_art {
+	margin: 15px 150px 0px 150px;
+	img.show_image {
+		float: right;
+		width: 500px;
+		margin: 0px 0px 15px 50px;
+		height: auto;
+	}
+	p.show {
+		font-family: $small_font;
+		width: auto;
+		margin: 0px;
+	}
+}
+
+
+
+.editor_bar {
+	margin: 0px 150px 20px 150px;
+	h2.show_title {
+		font-family: $large_font;
+		font-size: 2em;
+		text-align: center;
+	}
+	ul.show_nav{
+		font-family: $small_font;
+		.author {
+			float: left;
+			width: 1/7 * 100%;
+			padding-right: 0px;
+		}
+		.edit {
+			float: right;
+			width: 1/7 * 100%;
+			text-align: right;
+			li.edit_bar {
+				display: inline-block;
+				padding: 0px 0px 0px 20px;
+			}
+		}
+	}	
+}
+
+
+.show_user{
+	margin: 20px 300px 20px 300px;
+	height: 200px;
+	font-family: $small_font;
+	.user_edit {
+		text-align: -webkit-right;
+		float: right;
+		width:1/5 * 100%
+	}
+	.edit_delete{
+		display: inline-block;
+		padding-left: 20px;
+	}
+	img {
+		@extend .user_img;
+		width: 150px;
+		height: 150px;
+	}
+	.name {
+		font-size: 2em;
+	}
+	.user_info {
+		padding-left: 40px;
+		position: relative;
+		left: 150px;
+		bottom: 100px;
+	}
+}
+.show_titles {
+	margin: 20px 300px 20px 300px;
+	font-family: $small_font;
+}
+
+
+h2.new {
+	font-family: $large_font;
+	font-size: 2em;
+	text-align: center;
+}
+form {
+	font-family: $small_font;
+	input {
+		width: 500px;
+	}
+	textarea#article_content {
+		width: 500px;
+		height: 250px;
+	}
+	.pure-button-primary.pure-button{
+		background-color: $button_color;
+	}
+}
+
+
+.index_user {
+	@extend .user_width;
+	margin-top: 20px;
+	ul.list_user {
+		display: inline-block;
+	}
+	.each_user{
+		font-size: 14px;
+		padding: 0px 15px 0px 15px;
+		width: 180px;
+		display: inline-block;
+		img.user_img{
+			width: 150px;
+			height: 150px;
+			@extend .user_img;
+		}
+	}
+}
+
+.user {
+	@extend .user_width;
+	font-family: $large_font;
+	font-size: 2em;
+}
+
+form.user_form {
+	@extend .user_width;
+	padding-right: 160px;
+}
+form.edit_article {
+	@extend .user_width;
+	padding-right: 160px;
+}
+
+form#new_article {
+	@extend .user_width;
+	padding-right: 160px;
+	div.authors {
+		text-align: left;
+		padding-left: 118px;
+	}
+}

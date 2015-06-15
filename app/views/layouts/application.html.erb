@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wikasia</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<nav>
+	<div class='logo_box'>
+	<h1 class='logo'>Wikasia</h1>
+	</div>
+	<ul id='nav_tabs'>
+		<li class='nav_bar home'><%= link_to "Home", wikasia_path %></li>
+		<li class='nav_bar'><%= link_to "Articles", articles_path %></li>
+		<li class='nav_bar'><%= link_to "Create Article", new_article_path %></li>
+		<li class='nav_bar'><%= link_to "Random Article", articles_rand_path %></li>
+		<li class='nav_bar'><%= link_to "Sign-Up", new_user_path %></li>
+		<li class='nav_bar'><%= link_to "See Authors", users_path %></li>
+	</ul>
+</nav>
+<%= yield %>
+
+</body>
+</html>

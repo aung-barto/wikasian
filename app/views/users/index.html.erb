@@ -1,0 +1,9 @@
+
+<div class='index_user'>
+	<% @users.each do |user| %>
+		<ul class='list_user'>
+			<li class='each_user'><%= image_tag user.u_img, class: 'user_img' %><br>
+			<h3 style = 'text-align: center'><%= link_to user.name, user %></h3></li>
+		</ul>
+	<% end %>
+</div>

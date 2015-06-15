@@ -1,0 +1,16 @@
+<div class='editor_bar'>
+	<h2 class='show_title'><%= @article.title %></h2>
+	<hr>
+	<ul class='show_nav'>
+		<li class='author'>By: <%= link_to @user.name, @user %></li>
+		<div class='edit'>
+			<li class='edit_bar'><%= link_to "Edit", edit_article_path(@article.id) %></li>
+			<li class='edit_bar'><%= link_to "Delete", @article, method: :delete, class: 'delete' %></li>
+		</div>
+	</ul>
+</div><br>
+<div class='show_art'>
+	<%= image_tag @article.img_url, class: 'show_image' %>
+	<p class='show'><%= @article.content.html_safe %></p>
+</div>
+
