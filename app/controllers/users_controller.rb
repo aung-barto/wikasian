@@ -31,6 +31,12 @@ class UsersController < ApplicationController
 	def destroy
 		@user = User.find(params[:id])
 		@user.destroy
+
+		@articles = Article.where({user_id: params[:id]})
+		@articles.each do |article|
+			article.destroy
+		end
+
 		redirect_to(users_path)
 	end
 
