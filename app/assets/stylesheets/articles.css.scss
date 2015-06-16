@@ -29,14 +29,16 @@ nav {
 	h1.logo {
 		margin-top: 0px;
 		margin-bottom: 0px;
-		padding: 20px 0px 0px 100px;
+		padding: 20px 0px 0px 0px;
 		font-family: $large_font;
 		font-size: 3em;
 		color: $nav_bar_color;
+		text-align: center;
 	}
 	ul#nav_tabs{
-		padding: 10px 0px 10px 100px;
+		padding: 10px 0px 10px 0px;
 		margin-bottom: 0px;
+		text-align: center;
 		li.nav_bar {
 			color: $nav_bar_color;
 			display: inline-block;
@@ -126,6 +128,7 @@ img.sample_image {
 			margin-bottom: 0px;
 			font-family: $large_font;
 			font-size: 2em;
+			text-align: center;
 		}
 		p.snippets {
 			font-family: $small_font;
