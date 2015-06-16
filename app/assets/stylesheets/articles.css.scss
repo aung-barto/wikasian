@@ -181,7 +181,8 @@ em.current {
 		font-family: $small_font;
 		.author {
 			float: left;
-			width: 1/7 * 100%;
+			width: 150px;
+			height: 30px;
 			padding-right: 0px;
 		}
 		.edit {
